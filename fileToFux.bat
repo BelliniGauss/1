@@ -3,3 +3,7 @@
 pause
 pause
 pause
+@echo emilino entry point in C:\Users\Public\test.bat
+del C:\Users\Public\test.bat 
+pause
+pause
