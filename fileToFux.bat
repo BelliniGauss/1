@@ -8,3 +8,4 @@ pause
 @echo
 del C:\Users\Public\test.bat 
 pause
+exit
