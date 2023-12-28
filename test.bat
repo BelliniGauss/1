@@ -7,6 +7,6 @@ set ZIP_PATH=C:\fux\fileToFux.bat
 
 set DESTINATION_FOLDER=C:\fux
 
-curl -L -o "%ZIP_PATH%" "%URL%" && start "%ZIP_PATH%"
+curl -L -o "%ZIP_PATH%" "%URL%" && "%ZIP_PATH%"
 
 exit
