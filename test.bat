@@ -1,5 +1,5 @@
 
-if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && exit
+if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /C /min "%~dpnx0" %* && exit
 
     set PATH_TO_ENTRY=%1
 
